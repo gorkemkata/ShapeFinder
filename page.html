@@ -1,0 +1,79 @@
+
+<title> Gorkem Kata Mulakat Sorusu Cevabi</title>
+<body style="text-align:center;">
+<h1>Created by Gorkem Kata</h1>
+<h3><a href="https://github.com/gorkemkata">github</a></h3>
+
+
+<h3>Press Simulate button to start</h3>
+<style>
+canvas {
+	border:1px solid #000000;
+	margin: 10px;
+}
+</style>
+
+<canvas id="mainCanvas"></canvas>
+<br>
+<hr>
+<canvas id="blueCanvas"></canvas>
+<canvas id="redCanvas"></canvas>
+<canvas id="orangeCanvas"></canvas>
+<canvas id="greenCanvas"></canvas>
+<hr>
+<br>
+<canvas id="blueResultCanvas"></canvas>
+<canvas id="redResultCanvas"></canvas>
+<canvas id="orangeResultCanvas"></canvas>
+<canvas id="greenResultCanvas"></canvas>
+
+
+<br>
+
+<div style=";width:1050px;height:60px;float:left;text-align:center;margin-left:420px;margin-top:50px;">
+
+<div style="width:200px;height:60px;float:left;">
+<input type="range" id="matrixWidth" autocomplete="off"  min="10" max="50" value="12" oninput="widthAmount.value=matrixWidth.value" />
+<output id="widthAmount" for="matrixWidth">12</output>
+<br>
+<label for="matrixWidth">Matrix Width</label>
+</div>
+
+<div style="width:200px;height:60px;float:left;">
+<input type="range" id="matrixHeight" autocomplete="off"  min="10" max="50" value="12" oninput="heightAmount.value=matrixHeight.value" />
+<output id="heightAmount" for="matrixHeight">12</output>
+<br>
+<label for="matrixHeight">Matrix Height</label>
+</div>
+
+<div style="width:200px;height:60px;float:left;">
+<input type="range" id="pixelSize"  min="10" max="30" value="18" oninput="pixelSizeAmount.value=pixelSize.value">
+<output id="pixelSizeAmount" for="pixelSize">18</output>
+<br>
+<label for="pixelSize">Pixel Size</label>
+</div>
+
+<div style="width:250px;height:60px;float:left;">
+<input type="range" id="delay"  min="100" max="1000" value="700" oninput="delayAmount.value=delay.value" />
+<output id="delayAmount" for="delay">700</output>
+<br>
+<label for="delay">Animation Speed</label>
+</div>
+
+<div style="width:200px;height:60px;float:left;">
+<input type="range" id="whiteRate" autocomplete="off"  min="1" max="20" value="3" oninput="whiteRateAmount.value=whiteRate.value" />
+<output id="whiteRateAmount" for="whiteRate">3</output>
+<br>
+<label for="delay">White Rate</label>
+</div>
+
+<button style="text-align:center;" onclick="initialization()">Simulate</button>
+
+</div>
+
+
+<br><br><br><br><br><br><br>
+<p id="result" ></p>
+
+<script src="ShapeFinder.js"></script>
+</body>
